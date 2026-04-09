@@ -4,61 +4,51 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Services | Climate Crafter | Forney, TX HVAC</title>
-  <meta name="description" content="HVAC diagnostic and repair, seasonal tune-ups, and system replacement consultations in Forney and the DFW area. Upfront pricing, no surprises.">
+  <meta name="description" content="HVAC diagnostic and repair, seasonal tune-ups, and system replacement consultations in Forney and the DFW area. No surprises, no pressure.">
   <link rel="stylesheet" href="style.css">
   <style>
-    .services-body { padding: 64px 48px; max-width: 900px; }
+    .services-body { padding: 64px 52px; background: var(--bg); }
 
     .service-row {
-      display: flex; gap: 36px; align-items: flex-start;
-      padding: 48px 0; border-bottom: 0.5px solid #e8edf7;
+      display: flex; gap: 40px; align-items: flex-start;
+      background: var(--bg-card); border-radius: 20px;
+      border: 1px solid var(--border); padding: 44px 40px;
+      margin-bottom: 24px;
     }
-    .service-row:last-child { border-bottom: none; padding-bottom: 0; }
+    .service-row:last-child { margin-bottom: 0; }
 
     .service-row-icon {
-      width: 68px; height: 68px; border-radius: 16px; flex-shrink: 0;
+      width: 72px; height: 72px; border-radius: 18px; flex-shrink: 0;
       display: flex; align-items: center; justify-content: center;
     }
-    .svc-o { background: var(--orange-light); border: 1px solid var(--orange-border); }
-    .svc-b { background: var(--blue-light); border: 1px solid var(--blue-border); }
+    .svc-o { background: var(--orange-soft); border: 1px solid var(--orange-border); }
+    .svc-b { background: var(--blue-soft); border: 1px solid var(--blue-border); }
 
-    .service-row-top {
-      display: flex; align-items: center; justify-content: space-between;
-      margin-bottom: 12px; gap: 16px; flex-wrap: wrap;
-    }
-    .service-row-name { font-family: 'Nunito', sans-serif; font-size: 22px; font-weight: 700; color: var(--navy); }
-    .price-badge {
-      font-family: 'Nunito', sans-serif; font-size: 13px; font-weight: 700;
-      padding: 5px 16px; border-radius: 20px;
-    }
-    .price-o { color: var(--orange); background: var(--orange-light); border: 1px solid var(--orange-border); }
-    .price-b { color: var(--blue); background: var(--blue-light); border: 1px solid var(--blue-border); }
-
-    .service-row-desc { font-size: 15px; color: var(--text-muted); line-height: 1.7; margin-bottom: 20px; }
+    .service-row-name { font-family: 'Nunito', sans-serif; font-size: 24px; font-weight: 800; color: var(--navy); margin-bottom: 14px; }
+    .service-row-desc { font-size: 15px; color: var(--text-muted); line-height: 1.75; margin-bottom: 22px; max-width: 580px; }
 
     .includes-label {
       font-family: 'Nunito', sans-serif; font-size: 11px; font-weight: 700;
-      letter-spacing: 0.1em; text-transform: uppercase; color: var(--navy);
-      margin-bottom: 10px;
+      letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-muted);
+      margin-bottom: 12px;
     }
-    .includes-list { display: flex; flex-direction: column; gap: 8px; margin-bottom: 24px; }
-    .include-item { display: flex; align-items: flex-start; gap: 10px; font-size: 14px; color: #333; line-height: 1.5; }
-    .chk-o { color: var(--orange); font-weight: 700; flex-shrink: 0; }
-    .chk-b { color: var(--blue); font-weight: 700; flex-shrink: 0; }
+    .includes-list { display: flex; flex-direction: column; gap: 10px; margin-bottom: 28px; }
+    .include-item { display: flex; align-items: flex-start; gap: 12px; font-size: 14px; color: var(--text); line-height: 1.55; }
+    .chk-o { color: var(--orange); font-weight: 700; flex-shrink: 0; font-size: 15px; }
+    .chk-b { color: var(--blue); font-weight: 700; flex-shrink: 0; font-size: 15px; }
 
     .info-note {
-      background: var(--surface); border-left: 3px solid var(--blue);
-      border-radius: 0 10px 10px 0; padding: 20px 24px; margin: 0 48px 0;
-      display: flex; gap: 16px; align-items: flex-start;
+      background: var(--blue-soft); border-left: 3px solid var(--blue);
+      border-radius: 0 12px 12px 0; padding: 22px 28px;
+      margin: 32px 0 0; display: flex; gap: 16px; align-items: flex-start;
     }
     .info-note-title { font-family: 'Nunito', sans-serif; font-size: 15px; font-weight: 700; color: var(--navy); margin-bottom: 5px; }
-    .info-note-body { font-size: 14px; color: var(--text-muted); line-height: 1.6; }
+    .info-note-body { font-size: 14px; color: var(--text-muted); line-height: 1.65; }
 
     @media (max-width: 768px) {
       .services-body { padding: 40px 20px; }
-      .info-note { margin: 0 20px; }
-      .service-row { flex-direction: column; gap: 20px; }
-      .service-row-icon { width: 52px; height: 52px; border-radius: 12px; }
+      .service-row { flex-direction: column; gap: 20px; padding: 28px 24px; }
+      .service-row-icon { width: 56px; height: 56px; border-radius: 14px; }
     }
   </style>
 </head>
@@ -87,27 +77,24 @@
   <div class="page-hero">
     <div class="page-hero-eyebrow">What we offer</div>
     <h1>Our services</h1>
-    <p>Three straightforward services with upfront pricing. No surprises, no pressure — just quality work at a fair price.</p>
+    <p>Three things we do really well. No confusing packages, no hidden fees — just good work done right.</p>
   </div>
 
   <div class="services-body">
 
     <div class="service-row">
       <div class="service-row-icon svc-o">
-        <svg width="30" height="30" viewBox="0 0 30 30" fill="none"><circle cx="15" cy="15" r="5" stroke="#F26B2E" stroke-width="1.8"/><path d="M15 3v3.5M15 23.5V27M3 15h3.5M23.5 15H27M6.5 6.5l2.5 2.5M21 21l2.5 2.5M6.5 23.5l2.5-2.5M21 9l2.5-2.5" stroke="#F26B2E" stroke-width="1.8" stroke-linecap="round"/></svg>
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="5.5" stroke="#F26B2E" stroke-width="2"/><path d="M16 3v4M16 25v4M3 16h4M25 16h4M7.1 7.1l2.8 2.8M22.1 22.1l2.8 2.8M7.1 24.9l2.8-2.8M22.1 9.9l2.8-2.8" stroke="#F26B2E" stroke-width="2" stroke-linecap="round"/></svg>
       </div>
       <div style="flex:1">
-        <div class="service-row-top">
-          <div class="service-row-name">Diagnostic &amp; repair</div>
-          <div class="price-badge price-o">$90 service call</div>
-        </div>
-        <p class="service-row-desc">Something not running right? We'll come out, identify the problem, and give you a straight answer about what it takes to fix it. The $90 service call covers the diagnostic. Any repair work is quoted separately with no obligation to proceed.</p>
-        <div class="includes-label">Includes</div>
+        <div class="service-row-name">Diagnostic &amp; repair</div>
+        <p class="service-row-desc">Something not running right? We'll come out, figure out what's going on, and give you a straight answer about what it takes to fix it. The diagnostic is covered in the service call — any repair work is quoted separately and you decide whether to move forward.</p>
+        <div class="includes-label">What to expect</div>
         <div class="includes-list">
           <div class="include-item"><span class="chk-o">&#10003;</span> Full system diagnostic</div>
-          <div class="include-item"><span class="chk-o">&#10003;</span> Clear assessment with all options explained</div>
-          <div class="include-item"><span class="chk-o">&#10003;</span> Upfront repair quote before any work begins</div>
-          <div class="include-item"><span class="chk-o">&#10003;</span> Available after hours for urgent issues</div>
+          <div class="include-item"><span class="chk-o">&#10003;</span> Clear explanation of the issue and your options</div>
+          <div class="include-item"><span class="chk-o">&#10003;</span> Upfront quote before any repair work begins</div>
+          <div class="include-item"><span class="chk-o">&#10003;</span> Available after hours for urgent situations</div>
         </div>
         <a class="cc-btn-primary" href="contact.html">Schedule a service call</a>
       </div>
@@ -115,20 +102,17 @@
 
     <div class="service-row">
       <div class="service-row-icon svc-b">
-        <svg width="30" height="30" viewBox="0 0 30 30" fill="none"><circle cx="15" cy="15" r="11" stroke="#1559E1" stroke-width="1.8"/><path d="M15 9v6l4 3" stroke="#1559E1" stroke-width="1.8" stroke-linecap="round"/></svg>
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="12" stroke="#1559E1" stroke-width="2"/><path d="M16 9v7l5 3" stroke="#1559E1" stroke-width="2" stroke-linecap="round"/></svg>
       </div>
       <div style="flex:1">
-        <div class="service-row-top">
-          <div class="service-row-name">Seasonal tune-up</div>
-          <div class="price-badge price-b">$149</div>
-        </div>
-        <p class="service-row-desc">The best time to find a problem with your system is before it fails on the hottest day of the year. A seasonal tune-up keeps your system running efficiently, extends its lifespan, and catches small issues before they become expensive ones.</p>
-        <div class="includes-label">Includes</div>
+        <div class="service-row-name">Seasonal tune-up</div>
+        <p class="service-row-desc">The best time to catch a problem is before it turns into an emergency on the hottest day of the year. A tune-up keeps your system running efficiently, extends its life, and gives you peace of mind heading into summer or winter.</p>
+        <div class="includes-label">What to expect</div>
         <div class="includes-list">
           <div class="include-item"><span class="chk-b">&#10003;</span> Filter inspection and replacement guidance</div>
           <div class="include-item"><span class="chk-b">&#10003;</span> Coil cleaning and refrigerant check</div>
           <div class="include-item"><span class="chk-b">&#10003;</span> Electrical connections and capacitor check</div>
-          <div class="include-item"><span class="chk-b">&#10003;</span> Thermostat calibration and system test</div>
+          <div class="include-item"><span class="chk-b">&#10003;</span> Thermostat calibration and full system test</div>
           <div class="include-item"><span class="chk-b">&#10003;</span> Written summary of findings</div>
         </div>
         <a class="cc-btn-primary" href="contact.html">Schedule a tune-up</a>
@@ -137,15 +121,12 @@
 
     <div class="service-row">
       <div class="service-row-icon svc-o">
-        <svg width="30" height="30" viewBox="0 0 30 30" fill="none"><rect x="4" y="12" width="22" height="15" rx="3" stroke="#F26B2E" stroke-width="1.8"/><path d="M11 12V10a4 4 0 018 0v2" stroke="#F26B2E" stroke-width="1.8" stroke-linecap="round"/><circle cx="15" cy="19.5" r="2.5" stroke="#F26B2E" stroke-width="1.6"/></svg>
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect x="4" y="13" width="24" height="16" rx="3.5" stroke="#F26B2E" stroke-width="2"/><path d="M12 13V11a4 4 0 018 0v2" stroke="#F26B2E" stroke-width="2" stroke-linecap="round"/><circle cx="16" cy="21" r="3" stroke="#F26B2E" stroke-width="1.8"/></svg>
       </div>
       <div style="flex:1">
-        <div class="service-row-top">
-          <div class="service-row-name">System replacement consult</div>
-          <div class="price-badge price-b">Free</div>
-        </div>
-        <p class="service-row-desc">When it's time for a new system, the last thing you need is someone pushing the most expensive option. We'll assess your home, talk through what actually fits your needs and budget, and give you a clear recommendation. Simple and efficient, or fully featured — no pressure either way.</p>
-        <div class="includes-label">Includes</div>
+        <div class="service-row-name">System replacement</div>
+        <p class="service-row-desc">When it's time for something new, the last thing you need is someone pushing the priciest option. We'll walk through your home, talk about what actually fits your situation, and give you real options. Free consult, no pressure, no obligation.</p>
+        <div class="includes-label">What to expect</div>
         <div class="includes-list">
           <div class="include-item"><span class="chk-o">&#10003;</span> Home assessment and load calculation</div>
           <div class="include-item"><span class="chk-o">&#10003;</span> Multiple equipment options at different price points</div>
@@ -156,17 +137,15 @@
       </div>
     </div>
 
-  </div>
-
-  <div class="info-note">
-    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" style="flex-shrink:0;margin-top:2px"><circle cx="10" cy="10" r="8" stroke="#1559E1" stroke-width="1.5"/><path d="M10 9v5M10 6.5v.5" stroke="#1559E1" stroke-width="1.5" stroke-linecap="round"/></svg>
-    <div>
-      <div class="info-note-title">After-hours availability</div>
-      <div class="info-note-body">We're available 24/7 for urgent situations. After-hours calls are welcome — call or text us at <a href="tel:2144387148">(214) 438-7148</a> and we'll get back to you promptly.</div>
+    <div class="info-note">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" style="flex-shrink:0;margin-top:2px"><circle cx="10" cy="10" r="8" stroke="#1559E1" stroke-width="1.5"/><path d="M10 9v5M10 6.5v.5" stroke="#1559E1" stroke-width="1.5" stroke-linecap="round"/></svg>
+      <div>
+        <div class="info-note-title">After-hours availability</div>
+        <div class="info-note-body">We're available 24/7 for urgent situations. Call or text us at <a href="tel:2144387148">(214) 438-7148</a> and we'll get back to you promptly.</div>
+      </div>
     </div>
-  </div>
 
-  <div style="height: 64px;"></div>
+  </div>
 
   <div class="cc-cta-band">
     <div>
@@ -175,13 +154,13 @@
     </div>
     <div class="cc-cta-actions">
       <a class="cc-btn-primary" href="contact.html">Book online</a>
-      <a class="cc-btn-outline" href="tel:2144387148">Call (214) 438-7148</a>
+      <a class="cc-btn-outline-light" href="tel:2144387148">Call (214) 438-7148</a>
     </div>
   </div>
 
   <footer class="cc-footer">
     <div class="cc-footer-left">
-      &copy; 2026 Climate Crafter &nbsp;&middot;&nbsp; 11247 CR 213, Forney, TX 75126<br>
+      &copy; 2025 Climate Crafter &nbsp;&middot;&nbsp; 11247 CR 213, Forney, TX 75126<br>
       License # TACLB00148973E &nbsp;&middot;&nbsp; Service@ClimateCrafter.com
     </div>
     <div class="cc-footer-links">

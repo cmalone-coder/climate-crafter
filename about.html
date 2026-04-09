@@ -4,46 +4,46 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About | Climate Crafter | Forney, TX HVAC</title>
-  <meta name="description" content="Learn about Climate Crafter and owner Drew Riley — committed to quality, fair pricing, and giving customers the knowledge they need to make good decisions.">
+  <meta name="description" content="Learn about Climate Crafter and owner Drew Riley — committed to quality work, fair pricing, and giving customers the knowledge to make good decisions.">
   <link rel="stylesheet" href="style.css">
   <style>
-    .about-body { padding: 64px 48px; }
-    .about-layout { display: flex; gap: 56px; align-items: flex-start; max-width: 960px; }
+    .about-body { padding: 64px 52px; background: var(--bg); }
+    .about-layout { display: flex; gap: 60px; align-items: flex-start; max-width: 980px; }
 
-    .about-photo-col { flex-shrink: 0; width: 240px; }
+    .about-photo-col { flex-shrink: 0; width: 248px; }
     .about-photo-frame {
-      width: 240px; height: 300px; border-radius: 16px;
-      background: var(--surface); border: 0.5px solid var(--surface-border);
+      width: 248px; height: 310px; border-radius: 20px;
+      background: var(--bg-card); border: 1px solid var(--border);
       display: flex; align-items: center; justify-content: center;
       flex-direction: column; gap: 10px; overflow: hidden;
     }
-    .about-photo-frame img { width: 100%; height: 100%; object-fit: cover; border-radius: 16px; }
-    .photo-label { font-size: 13px; color: var(--nav-muted); text-align: center; line-height: 1.5; padding: 0 20px; }
+    .about-photo-frame img { width: 100%; height: 100%; object-fit: cover; border-radius: 20px; }
+    .photo-label { font-size: 13px; color: var(--text-light); text-align: center; line-height: 1.5; padding: 0 20px; }
 
     .about-creds {
-      margin-top: 14px; background: var(--surface);
-      border-radius: 10px; padding: 14px 16px;
-      border: 0.5px solid var(--surface-border);
+      margin-top: 16px; background: var(--bg-card);
+      border-radius: 14px; padding: 18px 20px; border: 1px solid var(--border);
     }
-    .cred-row { display: flex; flex-direction: column; margin-bottom: 10px; }
+    .cred-row { margin-bottom: 12px; }
     .cred-row:last-child { margin-bottom: 0; }
-    .cred-label { font-size: 10px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--nav-muted); margin-bottom: 2px; font-family: 'Nunito', sans-serif; }
-    .cred-val { font-size: 13px; font-weight: 500; color: var(--navy); }
+    .cred-label { font-size: 10px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-light); margin-bottom: 2px; font-family: 'Nunito', sans-serif; }
+    .cred-val { font-size: 13px; font-weight: 700; color: var(--navy); font-family: 'Nunito', sans-serif; }
 
     .about-text { flex: 1; }
-    .about-text h2 { font-size: 30px; color: var(--navy); margin-bottom: 4px; }
-    .about-subtitle { font-size: 15px; color: var(--blue); font-weight: 500; margin-bottom: 24px; font-family: 'Nunito', sans-serif; }
-    .about-text p { font-size: 15px; color: #444; line-height: 1.8; margin-bottom: 18px; }
+    .about-text h2 { font-size: 32px; color: var(--navy); margin-bottom: 4px; }
+    .about-subtitle { font-size: 15px; color: var(--blue); font-weight: 700; margin-bottom: 28px; font-family: 'Nunito', sans-serif; }
+    .about-text p { font-size: 15px; color: #4a3c2e; line-height: 1.85; margin-bottom: 20px; }
 
     .pullquote {
-      border-left: 3px solid var(--orange); padding: 14px 22px;
-      margin: 28px 0; background: #fffaf7; border-radius: 0 10px 10px 0;
+      border-left: 3px solid var(--orange); padding: 16px 24px;
+      margin: 32px 0; background: var(--bg-deep); border-radius: 0 14px 14px 0;
+      border: 1px solid var(--border); border-left: 3px solid var(--orange);
     }
-    .pullquote p { font-size: 16px; color: var(--navy); font-style: italic; margin: 0 0 8px; line-height: 1.55; }
+    .pullquote p { font-size: 17px; color: var(--navy); font-style: italic; margin: 0 0 8px; line-height: 1.55; font-family: 'Nunito', sans-serif; font-weight: 600; }
     .pullquote .attr { font-size: 13px; color: var(--text-light); font-style: normal; }
 
-    .about-sig { font-size: 14px; color: var(--text-muted); margin-top: 4px; line-height: 1.7; }
-    .about-sig strong { color: var(--navy); font-weight: 600; }
+    .about-sig { font-size: 14px; color: var(--text-muted); margin-top: 6px; line-height: 1.8; }
+    .about-sig strong { color: var(--navy); font-weight: 700; }
 
     @media (max-width: 768px) {
       .about-body { padding: 40px 20px; }
@@ -78,7 +78,7 @@
   <div class="page-hero">
     <div class="page-hero-eyebrow">Our story</div>
     <h1>Who we are</h1>
-    <p>A small operation built on a simple idea — do the work right, tell the truth, and treat people the way you'd want to be treated.</p>
+    <p>A small, local operation built on a simple idea — do the work right, tell the truth, and treat people the way you'd want to be treated.</p>
   </div>
 
   <div class="about-body">
@@ -86,7 +86,7 @@
 
       <div class="about-photo-col">
         <div class="about-photo-frame">
-          <div class="photo-label"><img src="drew.jpg"></div>
+          <div class="photo-label">Drew's photo<br>goes here</div>
         </div>
         <div class="about-creds">
           <div class="cred-row">
@@ -111,16 +111,16 @@
       <div class="about-text">
         <div class="cc-section-label">Meet the owner</div>
         <h2>Drew Riley</h2>
-        <div class="about-subtitle">Owner &amp; technician, Climate Crafter</div>
+        <div class="about-subtitle">Owner &amp; technician</div>
 
-        <p>Climate Crafter was created to fill a gap. My father was an honest, hard-working man who operated on a simple principle — if you work hard and the work is top quality, everything else will fall into place. Anything worth doing is worth doing right. That's what we're built on.</p>
+        <p>Climate Crafter was created to fill a gap. My father was an honest, hard-working man who operated on a simple principle — if you work hard and the work is top quality, everything else will fall into place. Anything worth doing is worth doing right. That's what this business is built on.</p>
 
         <div class="pullquote">
           <p>"No gimmicks, no shifty promotions. We want to give you the knowledge and service you expect from a professional."</p>
           <div class="attr">Drew Riley, owner</div>
         </div>
 
-        <p>I worked in construction into my 20s before heading to college, where I earned a degree in Electrical Engineering. That background gave me a deep understanding of how systems work and, just as importantly, how to tell when something is being misdiagnosed or unnecessarily replaced.</p>
+        <p>I worked in construction into my 20s before heading to college, where I earned a degree in Electrical Engineering. That background gave me a deep understanding of how systems work and, just as importantly, how to recognize when something is being misdiagnosed or unnecessarily replaced.</p>
 
         <p>Eventually I realized that if you're not part of the solution, you're part of the problem. Climate Crafter exists to give you straight information and help you make the best decision for your home and your budget. No upsells, no unnecessary repairs — just good work done right.</p>
 
@@ -140,13 +140,13 @@
     </div>
     <div class="cc-cta-actions">
       <a class="cc-btn-primary" href="contact.html">Book online</a>
-      <a class="cc-btn-outline" href="tel:2144387148">Call (214) 438-7148</a>
+      <a class="cc-btn-outline-light" href="tel:2144387148">Call (214) 438-7148</a>
     </div>
   </div>
 
   <footer class="cc-footer">
     <div class="cc-footer-left">
-      &copy; 2026 Climate Crafter &nbsp;&middot;&nbsp; 11247 CR 213, Forney, TX 75126<br>
+      &copy; 2025 Climate Crafter &nbsp;&middot;&nbsp; 11247 CR 213, Forney, TX 75126<br>
       License # TACLB00148973E &nbsp;&middot;&nbsp; Service@ClimateCrafter.com
     </div>
     <div class="cc-footer-links">
