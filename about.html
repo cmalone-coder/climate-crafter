@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Climate Crafter | Forney, TX HVAC</title>
+  <meta name="description" content="Learn about Climate Crafter and owner Drew Riley — committed to quality, fair pricing, and giving customers the knowledge they need to make good decisions.">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .about-body { padding: 64px 48px; }
+    .about-layout { display: flex; gap: 56px; align-items: flex-start; max-width: 960px; }
+
+    .about-photo-col { flex-shrink: 0; width: 240px; }
+    .about-photo-frame {
+      width: 240px; height: 300px; border-radius: 16px;
+      background: var(--surface); border: 0.5px solid var(--surface-border);
+      display: flex; align-items: center; justify-content: center;
+      flex-direction: column; gap: 10px; overflow: hidden;
+    }
+    .about-photo-frame img { width: 100%; height: 100%; object-fit: cover; border-radius: 16px; }
+    .photo-label { font-size: 13px; color: var(--nav-muted); text-align: center; line-height: 1.5; padding: 0 20px; }
+
+    .about-creds {
+      margin-top: 14px; background: var(--surface);
+      border-radius: 10px; padding: 14px 16px;
+      border: 0.5px solid var(--surface-border);
+    }
+    .cred-row { display: flex; flex-direction: column; margin-bottom: 10px; }
+    .cred-row:last-child { margin-bottom: 0; }
+    .cred-label { font-size: 10px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--nav-muted); margin-bottom: 2px; font-family: 'Nunito', sans-serif; }
+    .cred-val { font-size: 13px; font-weight: 500; color: var(--navy); }
+
+    .about-text { flex: 1; }
+    .about-text h2 { font-size: 30px; color: var(--navy); margin-bottom: 4px; }
+    .about-subtitle { font-size: 15px; color: var(--blue); font-weight: 500; margin-bottom: 24px; font-family: 'Nunito', sans-serif; }
+    .about-text p { font-size: 15px; color: #444; line-height: 1.8; margin-bottom: 18px; }
+
+    .pullquote {
+      border-left: 3px solid var(--orange); padding: 14px 22px;
+      margin: 28px 0; background: #fffaf7; border-radius: 0 10px 10px 0;
+    }
+    .pullquote p { font-size: 16px; color: var(--navy); font-style: italic; margin: 0 0 8px; line-height: 1.55; }
+    .pullquote .attr { font-size: 13px; color: var(--text-light); font-style: normal; }
+
+    .about-sig { font-size: 14px; color: var(--text-muted); margin-top: 4px; line-height: 1.7; }
+    .about-sig strong { color: var(--navy); font-weight: 600; }
+
+    @media (max-width: 768px) {
+      .about-body { padding: 40px 20px; }
+      .about-layout { flex-direction: column; gap: 32px; }
+      .about-photo-col { width: 100%; }
+      .about-photo-frame { width: 100%; height: 260px; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="cc-nav">
+    <a class="cc-nav-logo" href="index.html">
+      <div class="cc-logo-circle"><img src="logo.png" alt="Climate Crafter mascot"></div>
+      <div class="cc-logo-text">
+        <div class="name">Climate Crafter</div>
+        <div class="sub">Heating &amp; Air Conditioning</div>
+      </div>
+    </a>
+    <button class="cc-nav-hamburger" onclick="document.querySelector('.cc-nav-links').classList.toggle('open')" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="cc-nav-links">
+      <a href="services.html">Services</a>
+      <a href="about.html" class="active">About</a>
+      <a href="contact.html">Contact</a>
+      <a class="cc-nav-phone" href="tel:2144387148">(214) 438-7148</a>
+      <a class="cc-btn-nav" href="contact.html">Schedule now</a>
+    </div>
+  </nav>
+
+  <div class="page-hero">
+    <div class="page-hero-eyebrow">Our story</div>
+    <h1>Who we are</h1>
+    <p>A small operation built on a simple idea — do the work right, tell the truth, and treat people the way you'd want to be treated.</p>
+  </div>
+
+  <div class="about-body">
+    <div class="about-layout">
+
+      <div class="about-photo-col">
+        <div class="about-photo-frame">
+          <div class="photo-label"><img src="drew.jpg"></div>
+        </div>
+        <div class="about-creds">
+          <div class="cred-row">
+            <div class="cred-label">Owner</div>
+            <div class="cred-val">Drew Riley</div>
+          </div>
+          <div class="cred-row">
+            <div class="cred-label">License</div>
+            <div class="cred-val">TACLB00148973E</div>
+          </div>
+          <div class="cred-row">
+            <div class="cred-label">Service area</div>
+            <div class="cred-val">Forney, Rockwall, Mesquite &amp; DFW</div>
+          </div>
+          <div class="cred-row">
+            <div class="cred-label">After-hours</div>
+            <div class="cred-val">Available 24/7</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-text">
+        <div class="cc-section-label">Meet the owner</div>
+        <h2>Drew Riley</h2>
+        <div class="about-subtitle">Owner &amp; technician, Climate Crafter</div>
+
+        <p>Climate Crafter was created to fill a gap. My father was an honest, hard-working man who operated on a simple principle — if you work hard and the work is top quality, everything else will fall into place. Anything worth doing is worth doing right. That's what we're built on.</p>
+
+        <div class="pullquote">
+          <p>"No gimmicks, no shifty promotions. We want to give you the knowledge and service you expect from a professional."</p>
+          <div class="attr">Drew Riley, owner</div>
+        </div>
+
+        <p>I worked in construction into my 20s before heading to college, where I earned a degree in Electrical Engineering. That background gave me a deep understanding of how systems work and, just as importantly, how to tell when something is being misdiagnosed or unnecessarily replaced.</p>
+
+        <p>Eventually I realized that if you're not part of the solution, you're part of the problem. Climate Crafter exists to give you straight information and help you make the best decision for your home and your budget. No upsells, no unnecessary repairs — just good work done right.</p>
+
+        <p class="about-sig">
+          Proudly serving Forney, Rockwall, Mesquite, and the greater DFW area.<br>
+          <strong>Licensed &amp; insured &nbsp;&middot;&nbsp; TACLB00148973E</strong>
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="cc-cta-band">
+    <div>
+      <div class="heading">Ready to get started?</div>
+      <div class="sub">Call, text, or book online — we'll take it from there.</div>
+    </div>
+    <div class="cc-cta-actions">
+      <a class="cc-btn-primary" href="contact.html">Book online</a>
+      <a class="cc-btn-outline" href="tel:2144387148">Call (214) 438-7148</a>
+    </div>
+  </div>
+
+  <footer class="cc-footer">
+    <div class="cc-footer-left">
+      &copy; 2026 Climate Crafter &nbsp;&middot;&nbsp; 11247 CR 213, Forney, TX 75126<br>
+      License # TACLB00148973E &nbsp;&middot;&nbsp; Service@ClimateCrafter.com
+    </div>
+    <div class="cc-footer-links">
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="https://www.facebook.com/profile.php?id=61574477546319" target="_blank">Facebook</a>
+    </div>
+  </footer>
+
+</body>
+</html>

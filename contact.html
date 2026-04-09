@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Climate Crafter | Schedule HVAC Service in Forney, TX</title>
+  <meta name="description" content="Schedule HVAC service with Climate Crafter in Forney, TX. Book online, call, or text (214) 438-7148. After-hours available 24/7.">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .contact-body {
+      padding: 64px 48px; display: flex; gap: 52px; align-items: flex-start;
+    }
+
+    .contact-sidebar { width: 280px; flex-shrink: 0; display: flex; flex-direction: column; gap: 20px; }
+
+    .contact-card {
+      background: var(--surface); border-radius: 14px; padding: 22px 24px;
+      border: 0.5px solid var(--surface-border);
+    }
+    .contact-card-label {
+      font-family: 'Nunito', sans-serif; font-size: 11px; font-weight: 700;
+      letter-spacing: 0.1em; text-transform: uppercase; color: var(--blue);
+      margin-bottom: 14px;
+    }
+    .contact-line {
+      display: flex; align-items: flex-start; gap: 12px;
+      font-size: 14px; color: var(--navy); margin-bottom: 12px; line-height: 1.55;
+    }
+    .contact-line:last-child { margin-bottom: 0; }
+    .contact-line svg { flex-shrink: 0; margin-top: 2px; }
+    .contact-line a { color: var(--blue); text-decoration: none; }
+    .contact-line a:hover { text-decoration: underline; }
+    .contact-line .sub-text { font-size: 12px; color: var(--text-light); margin-top: 1px; }
+
+    .hours-row {
+      display: flex; justify-content: space-between;
+      font-size: 13px; color: #444; padding: 6px 0;
+      border-bottom: 0.5px solid var(--surface-border);
+    }
+    .hours-row:last-of-type { border-bottom: none; }
+    .hours-row .day { color: var(--navy); font-weight: 500; }
+    .hours-closed { color: var(--text-light); }
+    .hours-after {
+      margin-top: 12px; display: flex; align-items: center; gap: 8px;
+      font-size: 13px; font-weight: 600; color: var(--orange);
+      font-family: 'Nunito', sans-serif;
+    }
+
+    .social-list { display: flex; flex-direction: column; gap: 8px; }
+    .social-link {
+      display: flex; align-items: center; gap: 10px; font-size: 14px;
+      color: var(--blue); text-decoration: none; padding: 10px 14px;
+      border-radius: 8px; background: #fff; border: 0.5px solid var(--surface-border);
+      transition: border-color 0.15s, background 0.15s;
+    }
+    .social-link:hover { border-color: var(--blue); background: var(--blue-light); }
+
+    .booking-col { flex: 1; }
+    .booking-eyebrow {
+      font-family: 'Nunito', sans-serif; font-size: 11px; font-weight: 700;
+      letter-spacing: 0.1em; text-transform: uppercase; color: var(--blue); margin-bottom: 8px;
+    }
+    .booking-title { font-family: 'Nunito', sans-serif; font-size: 26px; font-weight: 700; color: var(--navy); margin-bottom: 8px; }
+    .booking-sub { font-size: 15px; color: var(--text-muted); line-height: 1.65; margin-bottom: 28px; }
+
+    .booking-placeholder {
+      background: var(--surface); border: 0.5px solid var(--surface-border);
+      border-radius: 14px; min-height: 420px;
+      display: flex; flex-direction: column; align-items: center;
+      justify-content: center; gap: 14px; padding: 48px;
+    }
+    .booking-placeholder-icon { opacity: 0.25; }
+    .booking-placeholder-title { font-family: 'Nunito', sans-serif; font-size: 16px; font-weight: 700; color: var(--nav-muted); }
+    .booking-placeholder-sub { font-size: 13px; color: #b0bdd4; text-align: center; line-height: 1.6; max-width: 280px; }
+
+    @media (max-width: 768px) {
+      .contact-body { flex-direction: column; padding: 40px 20px; gap: 32px; }
+      .contact-sidebar { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="cc-nav">
+    <a class="cc-nav-logo" href="index.html">
+      <div class="cc-logo-circle"><img src="logo.png" alt="Climate Crafter mascot"></div>
+      <div class="cc-logo-text">
+        <div class="name">Climate Crafter</div>
+        <div class="sub">Heating &amp; Air Conditioning</div>
+      </div>
+    </a>
+    <button class="cc-nav-hamburger" onclick="document.querySelector('.cc-nav-links').classList.toggle('open')" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="cc-nav-links">
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="active">Contact</a>
+      <a class="cc-nav-phone" href="tel:2144387148">(214) 438-7148</a>
+      <a class="cc-btn-nav" href="contact.html">Schedule now</a>
+    </div>
+  </nav>
+
+  <div class="page-hero">
+    <div class="page-hero-eyebrow">Get in touch</div>
+    <h1>Contact us</h1>
+    <p>Book online, call, or text. We'll get back to you quickly and get you scheduled at a time that works.</p>
+  </div>
+
+  <div class="contact-body">
+
+    <div class="contact-sidebar">
+
+      <div class="contact-card">
+        <div class="contact-card-label">Reach us</div>
+        <div class="contact-line">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 3a1.5 1.5 0 011.5-1.5h.75a.75.75 0 01.75.75v2a.75.75 0 01-.75.75H5a.5.5 0 00-.5.5v.5A5.5 5.5 0 0010 11h.5a.5.5 0 00.5-.5v-.25a.75.75 0 01.75-.75h2a.75.75 0 01.75.75v.75A1.5 1.5 0 0113 12.5C7.201 12.5 2.5 7.799 2.5 2A1.5 1.5 0 013 3z" stroke="#1559E1" stroke-width="1.2"/></svg>
+          <div>
+            <a href="tel:2144387148">(214) 438-7148</a>
+            <div class="sub-text">Call or text</div>
+          </div>
+        </div>
+        <div class="contact-line">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="2" y="3.5" width="12" height="9" rx="1.5" stroke="#1559E1" stroke-width="1.2"/><path d="M2 5.5l6 3.5 6-3.5" stroke="#1559E1" stroke-width="1.2" stroke-linecap="round"/></svg>
+          <a href="mailto:Service@ClimateCrafter.com">Service@ClimateCrafter.com</a>
+        </div>
+        <div class="contact-line">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 2a4 4 0 014 4c0 3-4 8-4 8S4 9 4 6a4 4 0 014-4z" stroke="#1559E1" stroke-width="1.2"/><circle cx="8" cy="6" r="1.5" stroke="#1559E1" stroke-width="1.2"/></svg>
+          <div>11247 CR 213<br>Forney, TX 75126</div>
+        </div>
+      </div>
+
+      <div class="contact-card">
+        <div class="contact-card-label">Hours</div>
+        <div class="hours-row"><span class="day">Monday</span><span>6am – 7pm</span></div>
+        <div class="hours-row"><span class="day">Tuesday</span><span>6am – 7pm</span></div>
+        <div class="hours-row"><span class="day">Wednesday</span><span>6am – 7pm</span></div>
+        <div class="hours-row"><span class="day">Thursday</span><span>6am – 7pm</span></div>
+        <div class="hours-row"><span class="day">Friday</span><span>6am – 7pm</span></div>
+        <div class="hours-row"><span class="day">Saturday</span><span class="hours-closed">Closed</span></div>
+        <div class="hours-row"><span class="day">Sunday</span><span class="hours-closed">Closed</span></div>
+        <div class="hours-after">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><circle cx="7" cy="7" r="5" stroke="#F26B2E" stroke-width="1.4"/><path d="M7 4.5V7l1.5 1" stroke="#F26B2E" stroke-width="1.4" stroke-linecap="round"/></svg>
+          After-hours available 24/7
+        </div>
+      </div>
+
+      <div class="contact-card">
+        <div class="contact-card-label">Follow us</div>
+        <div class="social-list">
+          <a class="social-link" href="https://www.facebook.com/profile.php?id=61574477546319" target="_blank">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="2" y="2" width="12" height="12" rx="2.5" stroke="#1559E1" stroke-width="1.2"/><path d="M9 8H7v4H6V8H5V7h1V6a2 2 0 012-2h1v1H8a1 1 0 00-1 1v1h2l-.2 1z" fill="#1559E1"/></svg>
+            Facebook
+          </a>
+          <a class="social-link" href="https://nextdoor.com/pages/climate-crafter-forney-tx/" target="_blank">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="5.5" stroke="#1559E1" stroke-width="1.2"/><path d="M5.5 8.5C6 10 7 11 8 11s2-1 2.5-2.5M5.5 8.5C5 7 5 5.5 6 4.5M5.5 8.5H10.5M10.5 8.5C11 7 11 5.5 10 4.5M6 4.5C7 5 8 5 10 4.5" stroke="#1559E1" stroke-width="1" stroke-linecap="round"/></svg>
+            Nextdoor
+          </a>
+          <a class="social-link" href="#" target="_blank">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 2.5l1.2 3.8H13l-3 2.2 1.2 3.8L8 10l-3.2 2.3 1.2-3.8-3-2.2h3.8z" stroke="#1559E1" stroke-width="1.2" stroke-linejoin="round"/></svg>
+            Google reviews
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="booking-col">
+      <div class="booking-eyebrow">Online booking</div>
+      <div class="booking-title">Schedule your appointment</div>
+      <p class="booking-sub">Pick a service and choose a time that works for you. For urgent after-hours needs, call or text us directly at (214) 438-7148.</p>
+
+      <div class="booking-placeholder">
+        <svg class="booking-placeholder-icon" width="56" height="56" viewBox="0 0 56 56" fill="none"><rect x="6" y="12" width="44" height="38" rx="5" stroke="#1559E1" stroke-width="2.5"/><path d="M6 22h44M18 6v12M38 6v12" stroke="#1559E1" stroke-width="2.5" stroke-linecap="round"/><rect x="14" y="30" width="6" height="6" rx="1" fill="#1559E1" opacity="0.4"/><rect x="25" y="30" width="6" height="6" rx="1" fill="#1559E1" opacity="0.4"/><rect x="36" y="30" width="6" height="6" rx="1" fill="#1559E1" opacity="0.4"/><rect x="14" y="40" width="6" height="6" rx="1" fill="#1559E1" opacity="0.4"/><rect x="25" y="40" width="6" height="6" rx="1" fill="#1559E1" opacity="0.4"/></svg>
+        <div class="booking-placeholder-title">Booking widget goes here</div>
+        <div class="booking-placeholder-sub">The Squarespace scheduling or Calendly embed will be placed in this area.</div>
+      </div>
+    </div>
+
+  </div>
+
+  <footer class="cc-footer">
+    <div class="cc-footer-left">
+      &copy; 2026 Climate Crafter &nbsp;&middot;&nbsp; 11247 CR 213, Forney, TX 75126<br>
+      License # TACLB00148973E &nbsp;&middot;&nbsp; Service@ClimateCrafter.com
+    </div>
+    <div class="cc-footer-links">
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="https://www.facebook.com/profile.php?id=61574477546319" target="_blank">Facebook</a>
+    </div>
+  </footer>
+
+</body>
+</html>
